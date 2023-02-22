@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+
+* {
+    font-family: "MedievalSharp";
+}
+
+html {
+    background-image: url("/assets/background.jpg");
+    height: 100%;
+    width: 100%;
+}
