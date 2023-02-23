@@ -7,7 +7,6 @@ const routes: Routes = [
 	{ path: '', redirectTo: '/home' },
 	{ path: 'home', component: HomeComponent },
 	{ path: 'characters', component: CharactersComponent },
-	// 404 page
 	{ path: '**', redirectTo: '/home' }
 ];
 
