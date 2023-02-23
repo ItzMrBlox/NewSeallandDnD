@@ -4,9 +4,11 @@ import { CharactersComponent } from './characters/characters.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/home', pathMatch: 'full' },
+	{ path: '', redirectTo: '/home' },
 	{ path: 'home', component: HomeComponent },
 	{ path: 'characters', component: CharactersComponent },
+	// 404 page
+	{ path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
