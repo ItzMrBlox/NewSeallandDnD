@@ -71,6 +71,7 @@ map area:hover {
     user-select: none;
     pointer-events: none;
     scale: 0.7;
+    display: block;
 }
 
 .infobox p {
