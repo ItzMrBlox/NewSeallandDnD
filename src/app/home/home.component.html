@@ -1,4 +1,9 @@
-<p>home works!</p>
-<button (click)="router.navigate(['characters'])"></button>
+<div class="mainbody">
+    <h1>New Sealland</h1>
+    <h2>A Dungeon & Dragons adventure set on the chaotic island of New Sealland!</h2>
 
-<app-map></app-map>
+    <div>
+        <app-map></app-map>
+        <div class="characters-div" *ngIf="random3Characters.length > 0 && random3Characters != undefined"></div>
+    </div>
+</div>

@@ -1,5 +1,0 @@
-const Characters = [
-
-]
-
-export { Characters }

@@ -28,11 +28,20 @@ export class MapComponent implements AfterViewInit {
 
 				if(type == 'region' || type == 'location') {
 					var id = element.getAttribute('id') as unknown as number;
-					var section = this.data[type].find((item: Region | Location) => item.Id == id);
-					this.currentHover = {
-						title: section.Name,
-						description: section.Description
+					var section: Region | Location  = this.data[type].find((item: Region | Location) => item.Id == id);
+					
+					if(section.Id <= 0) {
+						this.currentHover = {
+							title: section.Name,
+							description: section.Description
+						}
+					} else {
+						this.currentHover = {
+							title: '???',
+							description: '???'
+						}
 					}
+
 					// set infobox display to block
 					this.infoBox.style.display = 'block';
 					this.infoBox.style.top = e.pageY + 5 + 'px';
@@ -40,7 +49,7 @@ export class MapComponent implements AfterViewInit {
 				}
 			});
 
-			area.addEventListener('mouseout', (e) => {
+			area.addEventListener('mouseout', () => {
 				this.infoBox.style.display = 'none';
 			});
 		});

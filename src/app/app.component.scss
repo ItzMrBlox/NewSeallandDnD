@@ -1,0 +1,23 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #a9a793;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #69695d 2px solid;
+    gap: 100px;
+
+    > span {
+        font-size: 15px;
+        color: white;
+        padding: 4px;
+        background-color: #8b8a7a;
+        border-radius: 4px;
+        border: 1px solid #69695d;
+        cursor: pointer;
+    }
+}
