@@ -12,8 +12,6 @@ export class HomeComponent implements OnInit{
 	constructor(public router: Router) { }
 
 	ngOnInit(): void {
-		console.log(locations)
-		console.log("test")
 	}
 
 }
