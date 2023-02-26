@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit{
 
 	ngOnInit(): void {
 		console.log(locations)
+		console.log("test")
 	}
 
 }
