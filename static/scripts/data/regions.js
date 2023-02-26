@@ -1,4 +1,4 @@
-const regions = [
+const Regions = [
     {
         Id: 0,
         Name: "Plains",
@@ -26,4 +26,4 @@ const regions = [
     }
 ];
 
-export { regions };
+export { Regions };
