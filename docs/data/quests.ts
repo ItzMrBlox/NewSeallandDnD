@@ -15,7 +15,7 @@ export const quests: Quest[] = [
     {
         Id: 0,
         Title: "The Lost Kiwi",
-        Description: "During the Kiwi Festival in Kings Port, a Kiwi was stolen from the Noah during the Bandit Attack. The Kiwi was last seen being taken to the forest. Find the Kiwi and return it to the Noah.",
+        Description: "During the Kiwi Festival in Kings Port, a Kiwi was stolen from Noah during the Bandit Attack. The Kiwi was last seen being taken to the forest. Find the Kiwi and return it to the Noah.",
         Status: Status.Completed,
         Difficulty: 2
     },
