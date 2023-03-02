@@ -13,6 +13,6 @@ export class QuestsComponent {
 	}
 
 	get finishedQuests() {
-		return quests.filter(quest => quest.Status == Status.Completed || quest.Status == Status.Failed);
+		return quests.filter(quest => quest.Status == Status.Completed || quest.Status == Status.Failure);
 	}
 }

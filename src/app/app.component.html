@@ -1,4 +1,6 @@
-<router-outlet></router-outlet>
+<div class="mainbody" [ngStyle]="{'height': isQuestsPage() ? 'auto' : ''}">
+    <router-outlet></router-outlet>
+</div>
 <footer>
     <span (click)="router.navigate(['home'])">Home</span>
     <!-- <span (click)="router.navigate(['characters'])">Characters</span> -->

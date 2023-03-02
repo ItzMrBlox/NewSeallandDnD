@@ -33,3 +33,15 @@ img {
 map area {
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+    img {
+        zoom: 0.3;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    img {
+        zoom: 0.2;
+    }
+}   

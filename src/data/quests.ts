@@ -7,9 +7,10 @@ export interface Quest {
 }
 
 export enum Status {
+    Active,
     Inactive,
-    Completed,
-    Failed
+    Failure,
+    Completed
 }
 export const quests: Quest[] = [
     {

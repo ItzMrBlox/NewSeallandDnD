@@ -10,4 +10,8 @@ export class AppComponent {
 	title = 'New Sealland';
 
 	constructor(public router: Router) { }
+
+	isQuestsPage() {
+		return this.router.url.includes('quests');
+	}
 }
