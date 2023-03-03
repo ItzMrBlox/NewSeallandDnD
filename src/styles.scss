@@ -2,17 +2,27 @@
 @import url('https://fonts.googleapis.com/css?family=MedievalSharp');
 
 body {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/images/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('assets/images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 * {
-    font-family: MedievalSharp;
+	font-family: MedievalSharp;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
