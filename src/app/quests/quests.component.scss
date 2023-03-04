@@ -96,6 +96,18 @@ section {
             padding: 8px;
             font-size: 20px;
         }
+
+        .quest[active=true]::after {
+            content: "Active";
+            position: absolute;
+            bottom: 3px;
+            right: -30px;
+            transform: rotate(-45deg);
+            color: white;
+            background-color: rgb(54, 141, 97);
+            padding: 8px;
+            font-size: 20px;
+        }
     }
 }
 

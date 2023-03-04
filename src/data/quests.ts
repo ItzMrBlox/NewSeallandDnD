@@ -31,7 +31,7 @@ export const Quests: Quest[] = [
         Id: 2,
         Title: "Help the Arid Desert Squad",
         Description: "The Arid Desert Squad is a group of people who are trying to explore the Arid Desert. They have sent a message saying they ran out of water and have not found a way to replenish their water supply and they have been rushed by hordes of monsters. Please help them find a way to replenish their water supply and stop the hordes of monsters.",
-        Status: Status.Inactive,
+        Status: Status.Active,
         Difficulty: 3
     },
     {

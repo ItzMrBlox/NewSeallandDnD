@@ -1,6 +1,22 @@
 <h1>Quests</h1>
 <h2>These are all the quests that are currently given by the Adventures Guild of Kings Port</h2>
 
+<section *ngIf="activeQuests.length > 0">
+    <h1>Current Quest</h1>
+    <div class="container">
+        <div *ngFor="let quest of activeQuests" class="quest" [attr.active]="quest.Status == 0">
+            <h1>{{quest.Title}}</h1>
+            <p>{{quest.Description}}</p>
+            <section>
+                <h2>Difficulty</h2>
+                <div>
+                    <span *ngFor="let number of [1,2,3,4,5]; let index = index" [ngStyle]="{'display': index < quest.Difficulty ? 'block' : 'none'}">★</span>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
 <section>
     <h1>Quest Board</h1>
     <div class="container">

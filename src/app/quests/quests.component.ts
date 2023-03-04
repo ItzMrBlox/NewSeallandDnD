@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Quests, Status } from 'src/data/quests';
+import { Quest, Quests, Status } from 'src/data/quests';
 
 @Component({
 	selector: 'app-quests',
@@ -7,6 +7,9 @@ import { Quests, Status } from 'src/data/quests';
 	styleUrls: ['./quests.component.scss']
 })
 export class QuestsComponent {
+	get activeQuests() {
+		return Quests.filter(quest => quest.Status === Status.Active);
+	}
 
 	get inActiveQuests() {
 		return Quests.filter(quest => quest.Status === Status.Inactive);
