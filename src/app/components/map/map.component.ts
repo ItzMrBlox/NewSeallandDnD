@@ -1,6 +1,6 @@
-import { AfterViewChecked, AfterViewInit, Component, ElementRef, ViewChild, ViewChildren } from '@angular/core';
-import { locations, Location } from 'src/data/locations';
-import { regions, Region } from 'src/data/regions';
+import { AfterViewInit, Component } from '@angular/core';
+import { Locations, Location } from 'src/data/locations';
+import { Regions, Region } from 'src/data/regions';
 
 @Component({
 	selector: 'app-map',
@@ -12,8 +12,8 @@ export class MapComponent implements AfterViewInit {
 	mapAreas: HTMLAreaElement[] = [];
 	currentHover: {title: string, description: string} = {title: '', description: ''};
 	data: { [key: string]: any } = {
-		region: regions,
-		location: locations
+		region: Regions,
+		location: Locations
 	}
 	
 	ngAfterViewInit(): void {

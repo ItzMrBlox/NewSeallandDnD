@@ -9,6 +9,7 @@ import { MapComponent } from './components/map/map.component';
 import { QuestsComponent } from './quests/quests.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { NPCsComponent } from './npcs/npcs.component';
 
 @NgModule({
 	declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 		HomeComponent,
 		CharactersComponent,
 		MapComponent,
-		QuestsComponent
+		QuestsComponent,
+		NPCsComponent
 	],
 	imports: [
 		BrowserModule,

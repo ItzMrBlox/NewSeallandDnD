@@ -6,15 +6,16 @@ export interface Character {
     Player: string;
     Picture: string;
     Background: string;
-    Status: Status;
+    Status: CharacterStatus;
     Class: string;
     Race: string;
     Level: number;
 }
 
-export enum Status {
+export enum CharacterStatus {
     Active = 1,
     Retired = 2,
-    Dead = 3,
-    Unknown = 4
+    Alive = 3,
+    Deceased = 4,
+    Unknown = 5
 }

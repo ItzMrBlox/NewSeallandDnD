@@ -1,4 +1,4 @@
-export const regions: Region[] = [
+export const Regions: Region[] = [
     {
         Id: 0,
         Name: "Plains",

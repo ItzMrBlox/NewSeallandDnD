@@ -1,4 +1,4 @@
-export const locations: Location[] = [
+export const Locations: Location[] = [
     {
         Id: 0,
         Name: "Kings Port",

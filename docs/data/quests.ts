@@ -12,7 +12,7 @@ export enum Status {
     Failure,
     Completed
 }
-export const quests: Quest[] = [
+export const Quests: Quest[] = [
     {
         Id: 0,
         Title: "The Lost Kiwi",

@@ -1,0 +1,15 @@
+<h1>Non Player Characters</h1>
+
+<div class="npc-container">
+    <div *ngFor="let npc of NonPlayerCharacters" class="npc-div">
+        <img [src]="npc.Image" [ngStyle]="{'filter': npc.Status == 4 ? 'grayscale(1)' : ''}">
+        <div>
+            <h2>{{npc.Name}}</h2>
+            <p>{{npc.Description}}</p>
+            <p style="position: absolute;bottom: 10px;">
+                <span style="font-weight:600">Current Location: </span>
+                {{getLocation(npc)}}
+            </p>
+        </div>
+    </div>
+</div>

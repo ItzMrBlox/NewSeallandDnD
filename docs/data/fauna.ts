@@ -1,4 +1,4 @@
-export const monsters: Monster[] = []
+export const Monsters: Monster[] = []
 
 export interface Monster {
     Id: number;

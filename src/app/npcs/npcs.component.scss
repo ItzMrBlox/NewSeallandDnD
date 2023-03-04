@@ -1,0 +1,33 @@
+.npc-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.npc-div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 20px;
+    color: white;
+    
+    img {
+        height: 200px;
+        border-radius: 10px;
+        border: 2px solid #000;
+    }
+    
+    h2, p {
+        margin: 0;
+    }
+    
+    h2 {
+        border-bottom: 2px solid #929292;
+        margin-bottom: 5px;
+    }
+    
+    > div {
+        position: relative;
+    }
+}
